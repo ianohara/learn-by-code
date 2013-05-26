@@ -30,7 +30,7 @@ seed_rand(void) {
 
 void
 print_rand(void) {
-    printf("Printing a random number in print_rand: %f\n", 10.0*rand()/(double)RAND_MAX);
+    printf("Printing a random number in print_rand: %f\n", rand()/(double)RAND_MAX);
 }
 
 void
@@ -42,9 +42,9 @@ int
 main(int argc, char** argv) {
     seed_rand();
     fnp_void print_something = print_rand;
-    (*print_something)();
+    print_something();
     print_something = print_1;
-    (*print_something)();
+    print_something();
     return 0;
 }
 
