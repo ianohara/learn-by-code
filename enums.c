@@ -53,7 +53,7 @@ main(void) {
     if (IS_SEQUENTIAL_ENUM(SEQ_0)) {
         printf("is a sequential enum.\n");
     } else {
-        prinft("is NOT a sequential enum.\n");
+        printf("is NOT a sequential enum.\n");
     }
     printf("  The following are all IS_SEQUENTIAL_ENUM(x) calls where x\n");
     printf("  *IS NOT* a sequential_enum_t.  They are even_enum_t.\n");
