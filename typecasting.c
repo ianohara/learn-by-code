@@ -46,8 +46,7 @@ void
 base2print(void *pval, size_t bytes)
 {
     char this = '\0';
-    unsigned int b;
-    unsigned int bit;
+    unsigned int b, bit;
     for (b = bytes-1; (b >= 0) && (b < bytes); b--)
     {
         for (bit = 7; (bit >= 0) && (bit <= 7); bit--)
